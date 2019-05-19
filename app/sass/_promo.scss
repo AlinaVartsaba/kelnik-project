@@ -1,0 +1,23 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+
+  &__card {
+    display: flex;
+
+  }
+
+  &__percent,
+  &__discount {
+    font-size: 12px;
+    background-color: #ff4444;
+    color: #fefefe;
+    height: 17px;
+    padding: 0 2px;
+  }
+
+  &__percent {
+    margin-right: 20px;
+  }
+}

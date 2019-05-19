@@ -1,0 +1,98 @@
+.page-header {
+  margin: 0 auto;
+  background-color: $green;
+
+  &__mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  &__logo {
+    width: 30px;
+    height: 75px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  &__tel,
+  &__call {
+    display: none;
+  }
+
+
+}
+
+
+@media(min-width: 768px) {
+  .page-header {
+
+    &__logo {
+      padding-right: 40px;
+    }
+
+
+    &__call {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .page-header {
+    &__wrapper {
+      display: flex;
+    }
+
+    &__logo {
+      width: 37px;
+      height: 89px;
+
+    }
+
+    &__tel,
+    &__call {
+      display: block;
+      font-size: 25px;
+      color: #fefefe;
+    }
+
+    &__call {
+      font-size: 15px;
+    }
+  }
+}
+
+
+@media(min-width: 1400px) {
+  .page-header {
+    &__wrapper {
+      padding-left: 47px;
+      padding-top: 19px;
+      padding-bottom: 19px;
+    }
+
+    &__logo {
+      width: 37px;
+      height: 89px;
+    }
+
+    &__tel,
+    &__call {
+      display: block;
+      font-size: 32px;
+      color: #fefefe;
+    }
+
+    &__call {
+      font-size: 20px;
+    }
+  }
+}
+

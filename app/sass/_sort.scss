@@ -1,0 +1,24 @@
+.sort {
+  max-width: $mobile-width;
+  margin: 0 auto;
+  //background-color: #fffefd;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  //padding: 10px 4px;
+}
+
+@media(min-width: 768px) {
+  .sort {
+    max-width: $tablet-width;
+    //flex-direction: row;
+    //flex-wrap: wrap;
+  }
+}
+
+@media(min-width: 1280px) {
+  .sort {
+    //max-width: 1066px;
+    //padding: 88px 107px 50px 107px;
+  }
+}

@@ -1,0 +1,154 @@
+.page-section {
+  margin: 0 auto;
+
+  &__caption-wrap {
+    margin: 0 auto;
+    max-width: $mobile-width;
+  }
+
+  &__caption {
+    font-size: 25px;
+    color: $green;
+  }
+
+
+  &__sort {
+    font-size: 14px;
+    color: #7c9493;
+    margin: 0 auto;
+    max-width: $mobile-width;
+    position: relative;
+    left: 10px;
+    top: 40px;
+  }
+
+  &__sort-capt {
+    padding-right: 12px;
+  }
+
+
+  &__sort-price,
+  &__sort-room {
+    padding-right: 5px;
+  }
+
+  &__sort-arrow {
+    margin-right: 10px;
+  }
+
+
+  &__sort-arrow {
+    background-color: #f5f8f8;
+    border-radius: 50%;
+    padding: 7px;
+  }
+
+  &__sort-style {
+    color: #002f2f;
+    border-bottom: 2px dotted #002f2f;
+  }
+
+
+  &__btn {
+    width: 300px;
+    height: 50px;
+    background-color: $blue;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+top: -80px;
+  }
+
+  &__btn:hover {
+    width: 302px;
+    height: 51px;
+  }
+
+  &__up {
+    display: none;
+  }
+
+}
+
+
+@media(min-width: 768px) {
+
+  .page-section {
+    &__caption-wrap {
+      max-width: $tablet-width;
+    }
+
+
+    &__caption {
+      font-size: 30px;
+    }
+
+    &__sort {
+      max-width: $tablet-width;
+    }
+
+    &__sort-arrow {
+      margin-right: 18px;
+    }
+
+    &__btn {
+      width: 400px;
+      height: 60px;
+      font-size: 13px;
+
+    }
+
+    &__btn:hover {
+      width: 402px;
+      height: 61px;
+    }
+  }
+}
+
+
+@media(min-width: 1280px) {
+
+  .page-section {
+    &__caption-wrap {
+      max-width: 1280px;
+    }
+
+    &__caption {
+      font-size: 48px;
+      padding-left: 107px;
+    }
+
+    &__sort {
+      max-width: 1280px;
+    }
+
+    &__sort-capt {
+      padding-left: 107px;
+    }
+
+    &__btn {
+      width: 534px;
+      height: 73px;
+      font-size: 14px;
+      top: -120px;
+    }
+
+    &__btn:hover {
+      width: 536px;
+      height: 74px;
+    }
+
+
+    &__up {
+      display: none;
+      position: fixed;
+      bottom: 230px;
+      right: 2px;
+      cursor: pointer;
+      padding: 15px 23px 10px 10px;
+    }
+  }
+}

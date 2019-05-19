@@ -1,0 +1,184 @@
+.page-footer {
+  background-color: $blue;
+  margin: 0 auto;
+  max-width: $mobile-width;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  &__promo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  &__time {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__subscribe {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  &__mail {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+
+  &__post {
+    width: 250px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: $blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+  }
+
+
+  &__post:hover {
+    border-color: #05313f;
+  }
+
+  &__post:active {
+    background-color: #d8eff6;
+  }
+
+  input[type="email"]::placeholder {
+    color: $blue;
+  }
+
+  &__lab {
+    color: #ffffff;
+  }
+
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  &__sp::before {
+    content: "\00A0";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 18px;
+    background-color: white;
+    margin-right: 10px;
+    vertical-align: baseline;
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: $blue;
+  }
+
+  input[type=checkbox]:checked + &__sp::before {
+    content: "\2713";
+  }
+
+
+  &__btn {
+    width: 214px;
+    height: 44px;
+    background-color: #a7a37e;
+    color: #ffffff;
+    font-size: 14px;
+    border: 1px solid #a7a37e;
+  }
+
+  &__btn:hover {
+    width: 219px;
+    height: 45px;
+  }
+
+  &__btn:active {
+    color: #000;
+  }
+  &__btn:disabled {
+    background-color: #a1a1a1;
+  }
+
+}
+
+@media(min-width: 768px) {
+  .page-footer {
+    max-width: $tablet-width;
+
+    &__container {
+      flex-direction: row;
+      padding: 25px 35px 30px 30px;
+    }
+
+    &__time {
+      font-size: 28px;
+      padding-bottom: 15px;
+    }
+
+    &__subscribe {
+      font-size: 18px;
+    }
+
+    &__wrap {
+      padding-bottom: 17px;
+    }
+
+
+    &__mail {
+      padding-right: 52px;
+
+    }
+
+    &__post {
+      width: 240px;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      padding-left: 22px;
+    }
+
+
+    &__btn {
+      font-size: 16px;
+
+    }
+  }
+}
+
+
+@media(min-width: 1280px) {
+  .page-footer {
+    max-width: $desctop-width;
+
+    &__container {
+      padding: 50px 107px 35px 54px;
+    }
+
+
+    &__post {
+      width: 321px;
+    }
+
+    &__time {
+      font-size: 34px;
+      padding-right: 196px;
+    }
+
+    &__subscribe {
+      font-size: 18px;
+    }
+
+
+    &__btn {
+      font-size: 16px;
+    }
+  }
+}
