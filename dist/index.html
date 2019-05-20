@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кельник</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__wrapper">
+
+        <div class="page-header__mobile">
+            <img class="page-header__logo" src="img/logo.svg" alt="logo">
+
+
+            <div id="burger" class="menu">
+                <div class="menu__icon">
+                    <span class="menu__span"></span>
+                </div>
+                <div class="menu__list">
+                    <a href="/" class="menu__item">Объекты</a>
+                    <a href="/" class="menu__item">Компания</a>
+                    <a href="/" class="menu__item">Как купить</a>
+                    <a href="/" class="menu__item">Агентам</a>
+                    <a href="/" class="menu__item">Регионам</a>
+                    <a href="/" class="menu__item">Акции</a>
+                    <a href="/" class="menu__item">Контакты</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-header__contact">
+            <span class="page-header__tel">8 888 88 88 98</span>
+            <span class="page-header__call">Звони скорее!</span>
+        </div>
+
+
+    </div>
+</header>
+
+
+<section class="page-section">
+    <div class="page-section__caption-wrap"><h2 class="page-section__caption">НАЙДЕНО 666 КВАРТИР</h2></div>
+
+
+    <div id="btn" onclick="topFunction()" class="page-section__up"><img src="img/UP.png" alt="&uarr;"></div>
+
+
+    <div class="page-section__sort">
+        <span class="page-section__sort-capt">
+        Сортировать по: </span>
+        <span class="page-section__sort-price" id="price" onclick="sortByPriceAsc()">Цене</span>
+        <img class="page-section__sort-arrow" alt="down" src="img/arrow-down.svg">
+        <span class="page-section__sort-room" id="room">Комнатам</span>
+        <img class="page-section__sort-arrow" alt="up" src="img/arrow-up.svg">
+
+    </div>
+
+
+    <div id="container" class="container">
+
+
+    </div>
+    <button class="page-section__btn" id="show-more" onclick="loadData()">ПОКАЗАТЬ ЕЩЕ 20</button>
+</section>
+
+
+<footer class="page-footer">
+    <div class="page-footer__container">
+
+
+        <div class="page-footer__promo">
+            <span class="page-footer__time">Успей купить!</span>
+            <span class="page-footer__subscribe">Подпишись и успей словить все акции</span>
+        </div>
+
+
+        <div class="page-footer__mail">
+            <label class="page-footer__wrap">
+                <input id="emailForm" type="email" placeholder="E-mail" class="page-footer__post"
+                       oninput="validateEmail(document.getElementById('emailForm'))">
+            </label>
+
+
+            <label for="checkbox" class="page-footer__lab">
+                <input type="checkbox" class="page-footer__checkbox" id="checkbox" checked/>
+                <span class="page-footer__sp">подписаться на новости</span></label>
+
+        </div>
+
+        <button class="page-footer__btn" id="subscribe-btn">ПОДПИСАТЬСЯ</button>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
